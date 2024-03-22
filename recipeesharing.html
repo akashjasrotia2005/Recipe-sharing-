@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipee sharing</title>
+    <link rel="stylesheet" type="text/css" href="css.css">
+    <script>
+        function login(){
+            window.location.href = "loginpagerecipe.html"
+        }
+        function recipes(){
+            window.location.href = "recipes.html"
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h2>
+                <span>HALF</span>BAKED
+            </h2>
+        </div>
+        <div class="links">
+            <a href="#" class="link">
+                HOME
+            </a>
+            <a href="#" onclick="recipes()" class="link">
+                RECIPES
+            </a>
+            <a href="#" class="link">
+                LUNCH BOX IDEAS
+            </a>
+            <a href="#" onclick="login()" class="link">
+                LOGIN / SIGN UP
+            </a>
+        </div>
+        <div class="srch">
+            <input type="text" class="search" placeholder="Search for recipes..."/>
+        </div>
+    </header>
+
+    <div class="content">
+        <h1>
+            Make it like never before...
+        </h1>
+        <h2>
+            Your ultimate destination for culinary exploration and delicious inspiration!
+        </h2>
+        <h2>
+            Dive into our extensive collection of recipes spanning diverse cuisines from around the world. 
+            </h2>
+            <button class="explore">
+                Explore!
+            </button>
+    </div>
+</body>
+</html>

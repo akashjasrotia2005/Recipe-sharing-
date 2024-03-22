@@ -1,0 +1,122 @@
+<!-- after clicking on login/signup button in navigatiuon bar in the main homne page  -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function recipe(){
+            window.location.href = "recipeesharing.html"
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("https://images.unsplash.com/photo-1493770348161-369560ae357d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background: transparent;
+    border-radius: 10px;
+    border: 3px solid rgba(255,255,255,0.6);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 300px;
+    text-align: center;
+    backdrop-filter: blur(3px);
+}
+
+.login-form h2 {
+    margin-bottom: 20px;
+    font-family: 'poppins',sans-serif;
+    color: #ffffff;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    font-family: 'poppins',sans-serif;
+}
+
+.input-container input:focus {
+    border-color: #007bff;
+}
+
+.input-container i {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+p {
+    margin-top: 15px;
+    color: #777;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <form class="login-form">
+            <h2>Welcome Back!</h2>
+            <div class="input-container">
+                <input type="text" placeholder="Username" required>
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="input-container">
+                <input type="password" placeholder="Password" required>
+                <i class="fas fa-lock"></i>
+            </div>
+            <button type="submit" onclick="recipe()">Login</button>
+            <p>Don't have an account? <a href="#">Sign Up</a></p>
+        </form>
+    </div>
+</body>
+</html>
